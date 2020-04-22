@@ -2,7 +2,8 @@ def roll_call_dwarves(array) # code an argument here
   i = 0
   dwarves_names = []
     while i < array.length
-      return dwarves_names[i] if yield(collection[i])
+      if yield(array[i])
+        dwarves_names << yield(array[i])
       i = i + 1
     end
     dwarves_names.each_with_index
