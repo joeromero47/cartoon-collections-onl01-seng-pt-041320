@@ -2,8 +2,10 @@ def roll_call_dwarves(array) # code an argument here
   i = 0
   dwarves_names = []
     while i < array.length
-      dwarves_names << array.leng
-      
+      return collection[i] if yield(collection[i])
+      i = i + 1
+    end
+    dwarves_names.each_with_index
 end
 
 def summon_captain_planet# code an argument here
