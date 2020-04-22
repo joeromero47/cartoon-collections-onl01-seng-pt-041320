@@ -4,7 +4,7 @@ def roll_call_dwarves(array) # code an argument here
     while i < array.length
       if yield(array[i])
         dwarves_names << yield(array[i])
-      i = i + 1
+        i = i + 1
     end
     dwarves_names.each_with_index
 end
