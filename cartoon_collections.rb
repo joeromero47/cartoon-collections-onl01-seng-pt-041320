@@ -11,8 +11,10 @@ def summon_captain_planet(planeteer_calls) # code an argument here
     end
 end
 
-def long_planeteer_calls# code an argument here
-  
+def long_planeteer_calls(calls) # code an argument here
+  calls.any? do |call|
+    call.length > 4
+  end
 end
 
 def find_the_cheese# code an argument here
@@ -20,10 +22,3 @@ def find_the_cheese# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
 
-def my_find(collection)
- i = 0
-  while i < collection.length
-    return collection[i] if yield(collection[i])
-    i = i + 1
-  end
-end
