@@ -1,8 +1,8 @@
 def roll_call_dwarves(array) # code an argument here
   i = 0
   dwarves_names = []
-    while i < array
-      dwarves_names << array.
+    while i < array.length
+      dwarves_names << array.leng
       
 end
 
@@ -17,4 +17,12 @@ end
 def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+end
+
+def my_find(collection)
+ i = 0
+  while i < collection.length
+    return collection[i] if yield(collection[i])
+    i = i + 1
+  end
 end
